@@ -15,7 +15,7 @@ while camera.isOpened():
 	# saves image to current folder,It may be not required
         cv2.imwrite('Clicked_image'+y+'.jpg',frame)
 	#saves photo cloud from the current folder
-        os.system("sshpass -p krishna scp  /home/ss/Desktop/Clicked_image"+y+".jpg krishna@18.191.129.15:")
+        os.system("sshpass -p ******(ur_passwd) scp  /home/ss/Desktop/Clicked_image"+y+".jpg Username@cloud_ip:")
         
     elif cv2.waitKey(1) &  0xFF==ord('q'):
         break
